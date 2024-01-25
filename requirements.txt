@@ -50,3 +50,4 @@ bqplot
 
 geopandas==0.14.2
 bokeh==3.3.3
+colorcet==3.0.1
