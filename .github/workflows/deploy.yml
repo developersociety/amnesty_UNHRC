@@ -24,6 +24,7 @@ jobs:
       - name: Install Quarto
         run: |
           wget -qO- "https://quarto.org/install/linux-deb.sh" | sh
+          echo "$HOME/.local/bin" >> $GITHUB_PATH
       - name: Render Notebook
         run: |
           quarto render content/Amnesty-dashboard.ipynb --to html --output-dir docs
