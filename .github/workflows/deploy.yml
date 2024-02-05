@@ -25,13 +25,6 @@ jobs:
         run: |
           cp README.md content
           jupyter lite build --contents content --output-dir dist
-      - name: Commit docs directory
-        run: |
-          git config --global user.name 'Steve Hawkes'
-          git config --global user.email 'steve@dev.ngo'
-          git add docs/
-          git commit -m "Update dashboard"
-          git push
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
